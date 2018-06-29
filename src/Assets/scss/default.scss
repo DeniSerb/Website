@@ -3,8 +3,7 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  background:$black;
-  color:$white;
+  background:#f3f3f3;
   height: 90px;
 
   .logotype {
@@ -23,7 +22,22 @@ header {
     nav ul li {
       margin: 0;
       padding: 0;
+
+      a {
+        text-decoration: none;
+        color: #a0a0a0;
+        @include transition(.3s ease-in-out);
+        cursor: poiner;
+
+      &:hover {
+        text-decoration: none;
+        color: #676767;
+        @include transition(.3s ease-in-out)
+      }
+
     }
+  }       
+ 
   nav {
     position: absolute;
     top: 50%; right: 15px;
@@ -41,11 +55,6 @@ header {
       margin: 0;
     }
 
-    a {
-      font-size: 19px;
-      line-height: normal;
-      color: $white;    
-    }
   
   }
 
