@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 
-class Products extends Component {
+class WhyPenoizol extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <div className="WhyPenoizol">
 
         <h1>
-          Products
+          Почему пеноизол?
         </h1>
 
         <p>
@@ -18,4 +18,4 @@ class Products extends Component {
   }
 }
 
-export default Products;
+export default WhyPenoizol;

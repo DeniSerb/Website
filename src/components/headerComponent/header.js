@@ -20,19 +20,19 @@ class Header extends Component {
         <Link to='/'>Главная</Link>
       </li>
        <li>
-       <Link to='/Products'>О компании</Link>
+       <Link to='/AboutCompany'>О компании</Link>
       </li>
        <li>
-       <Link to='/'>Почему пеноизол?</Link>
+       <Link to='/WhyPenoizol'>Почему пеноизол?</Link>
       </li>
        <li>
-        <Link to='/'>Сфера применения</Link>
+        <Link to='/SphereOfApplication'>Сфера применения</Link>
       </li>
        <li>
-        <Link to='/'>Цена</Link>
+        <Link to='/Price'>Цена</Link>
       </li>
        <li>
-        <Link to='/'>Контакты</Link>
+        <Link to='/Contacts'>Контакты</Link>
       </li>
     </ul>
   </nav>

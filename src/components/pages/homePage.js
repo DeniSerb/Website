@@ -7,7 +7,7 @@ class HomePage extends Component {
 
           <img className="main" src="pena.jpg" alt="Картинка не доступна =(" width="1550px"></img>
 
-          <h1>HomePage content</h1>
+          <h1>Домашняя Страница</h1>
 
           <p>
           Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для 
