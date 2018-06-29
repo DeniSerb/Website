@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class HomePage extends Component {
   render() {
     return (
-        <div className="container-fluid">
+        <div className="home">
+
+          <img className="main" src="pena.jpg" alt="Картинка не доступна =(" width="1550px"></img>
 
           <h1>HomePage content</h1>
 

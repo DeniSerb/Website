@@ -16,7 +16,7 @@ class Header extends Component {
 
   <nav>
     <ul>
-      <li className="first">
+      <li>
         <Link to='/'>Главная</Link>
       </li>
        <li>
@@ -31,7 +31,7 @@ class Header extends Component {
        <li>
         <Link to='/'>Цена</Link>
       </li>
-       <li className="last">
+       <li>
         <Link to='/'>Контакты</Link>
       </li>
     </ul>

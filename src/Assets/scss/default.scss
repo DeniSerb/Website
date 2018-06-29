@@ -1,4 +1,5 @@
 @import "_config.scss";
+
 header {
   position: relative;
   display: block;
@@ -6,16 +7,16 @@ header {
   background:#f3f3f3;
   height: 90px;
 
-  .logotype {
-      position: absolute;
-      top:50%; left: 5%;
-      -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-          transform: translateY(-50%);
-          }
-  .logo {
-      width: 70%;
-          }
+    .logotype {
+       position: absolute;
+       top:50%; left: 5%;
+        -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+           transform: translateY(-50%);
+           }
+    .logo {
+        width: 70%;
+            }
 
     nav,
     nav ul,
@@ -26,6 +27,7 @@ header {
       a {
         text-decoration: none;
         color: #a0a0a0;
+        font-family: 'Roboto', sans-serif;
         @include transition(.3s ease-in-out);
         cursor: poiner;
 
@@ -45,17 +47,11 @@ header {
   
 
 
- ul li {
+  ul li {
     list-style-type: none;
     display:  inline-block;
-    margin-right: 20px;
+    margin-right: 25px;
 
-
-    &.last {
-      margin: 0;
-    }
-
-  
   }
 
  }
