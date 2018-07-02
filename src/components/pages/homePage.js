@@ -5,7 +5,7 @@ class HomePage extends Component {
     return (
         <div className="home">
 
-          <img className="main" src="pena.jpg" alt="Картинка не доступна =(" width="1550px"></img>
+          <img src="pena.jpg" alt="Картинка не доступна =("></img>
 
           <h1>Домашняя Страница</h1>
 
