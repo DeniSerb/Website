@@ -4,15 +4,13 @@ header {
   position: relative;
   display: block;
   width: 100%;
-  background:#f3f3f3;
+  background:$grey;
   height: 90px;
 
     .logotype {
        position: absolute;
        top:50%; left: 5%;
-        -webkit-transform: translateY(-50%);
-         -moz-transform: translateY(-50%);
-           transform: translateY(-50%);
+       @include translateY(-50%);
            }
     .logo {
         width: 70%;
@@ -26,14 +24,14 @@ header {
 
       a {
         text-decoration: none;
-        color: #a0a0a0;
+        color: $darkGrey;
         font-family: 'Roboto', sans-serif;
         @include transition(.3s ease-in-out);
         cursor: poiner;
 
       &:hover {
         text-decoration: none;
-        color: #676767;
+        color: $hover;
         @include transition(.3s ease-in-out)
       }
 

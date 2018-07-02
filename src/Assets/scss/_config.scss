@@ -2,10 +2,14 @@
       -webkit-transform: translateY($e);
         -moz-transform: translateY($e);
           transform: translateY($e);
-        }
+        };
 
 @mixin transition($e) {
       -webkit-transition: $e;
         -moz-transition: $e;
           transition: $e;
-        }
+        };
+
+$hover: #676767;
+$grey: #f3f3f3;
+$darkGrey: #a0a0a0;
