@@ -27,7 +27,7 @@ import                           './Assets/css/default.min.css';
 class App extends Component {
 
   authenticate(){
-    return new Promise(resolve => setTimeout(resolve, 2000))
+    return new Promise(resolve => setTimeout(resolve, 3000))
   }
 
   componentDidMount(){
@@ -37,7 +37,7 @@ class App extends Component {
         ele.classList.add('available')
         setTimeout(() => {
           ele.outerHTML = ''
-        }, 2000)
+        }, 3000)
       }
     })
   }
