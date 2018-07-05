@@ -61,3 +61,21 @@ header {
     width: 100%;
   }
 }
+body {
+  h2, h5, p {
+    text-align: center;
+  }
+
+  h5 {
+    font-family: 'italic', sans-serif;
+    font-style: italic;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  h2{
+    padding-top: 4%;
+  }
+
+
+}
