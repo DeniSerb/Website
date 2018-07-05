@@ -3,17 +3,22 @@ import {
   Link
 }                           from 'react-router-dom';
 
+
 class Header extends Component {
   render() {
     return (
 <header>
-  
        <div className="logotype">
-            <Link to="/">
-              <img className="logo" src="logo.jpg" alt="Картинка не доступна =(" ></img>
-            </Link>
-          </div>
-
+        <Link to="/">
+          <img className="logo" src="logo.jpg" onclick="topFunction()" alt=""></img>
+        </Link>
+       </div>
+       <script>
+        function topFunction() {
+        document.documentElement.scrollTop = 0
+          }   
+       </script>
+  
   <nav>
     <ul>
       <li>
