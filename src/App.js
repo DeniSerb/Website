@@ -50,13 +50,13 @@ class App extends Component {
         <div className="App">
           <Header />
             <Switch>
-              <Route exact path='/'                    component={HomePage}/>
+              <Route exact path='/'              component={HomePage}/>
               <Route path='/AboutCompany'        component={AboutCompany}/>
               <Route path='/WhyPenoizol'         component={WhyPenoizol}/>
               <Route path='/SphereOfApplication' component={SphereOfApplication}/>
               <Route path='/Price'               component={Price}/>
               <Route path='/Contacts'            component={Contacts}/>
-              <Route component={NotFound}/>
+              <Route                             component={NotFound}/>
             </Switch>
           <Footer />
         </div>
