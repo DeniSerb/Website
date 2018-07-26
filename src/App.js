@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
+  Switch,
   Link
 }                           from 'react-router-dom';
 
@@ -15,6 +16,7 @@ import WhyPenoizol          from './components/pages/whyPenoizol.js'
 import SphereOfApplication  from './components/pages/sphereOfApplication.js'
 import Price                from './components/pages/price.js'
 import Contacts             from './components/pages/contacts.js'
+import NotFound             from './components/pages/notFound.js'
 
 //Style
 
@@ -45,20 +47,19 @@ class App extends Component {
   render() {
     return (
       <Router>
-      <div className="App">
-        
-        <Header />
-
-          <Route exact path='/'                    component={HomePage}/>
-          <Route exact path='/AboutCompany'        component={AboutCompany}/>
-          <Route exact path='/WhyPenoizol'         component={WhyPenoizol}/>
-          <Route exact path='/SphereOfApplication' component={SphereOfApplication}/>
-          <Route exact path='/Price'               component={Price}/>
-          <Route exact path='/Contacts'            component={Contacts}/>
-
-        <Footer />
-
-      </div>
+        <div className="App">
+          <Header />
+            <Switch>
+              <Route exact path='/'                    component={HomePage}/>
+              <Route path='/AboutCompany'        component={AboutCompany}/>
+              <Route path='/WhyPenoizol'         component={WhyPenoizol}/>
+              <Route path='/SphereOfApplication' component={SphereOfApplication}/>
+              <Route path='/Price'               component={Price}/>
+              <Route path='/Contacts'            component={Contacts}/>
+              <Route component={NotFound}/>
+            </Switch>
+          <Footer />
+        </div>
       </Router>
     );
   }
