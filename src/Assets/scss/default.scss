@@ -1,83 +1,9 @@
 @import "_config.scss";
-
-header {
-  position: relative;
-  display: block;
-  width: 100%;
-  background:$grey;
-  height: 100px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-    .logotype {
-       position: absolute;
-       top:50%; left: 5%;
-       @include translateY(-50%);
-           }
-    .logo {
-        width: 70%;
-            }
-
-    nav,
-    nav ul,
-    nav ul li {
-      margin: 0;
-      padding: 0;
-
-      a {
-        text-decoration: none;
-        color: $darkGrey;
-        font-family: 'Roboto', sans-serif;
-        @include transition(.3s ease-in-out);
-        cursor: poiner;
-
-      &:hover {
-        text-decoration: none;
-        color: $hover;
-        @include transition(.3s ease-in-out)
-      }
-
-    }
-  }       
- 
-  nav {
-    position: absolute;
-    top: 50%; right: 15px;
-    @include translateY(-50%);
-  
+@import "header.scss";
+@import "home_page.scss";
 
 
-  ul li {
-    list-style-type: none;
-    display:  inline-block;
-    margin-right: 25px;
 
-  }
-
- }
- 
-}
-
-.home {
-    img {
-    width: 100%;
-  }
-}
-body {
-  h2, h5, p {
-    text-align: center;
-  }
-
-  h5 {
-    font-family: 'italic', sans-serif;
-    font-style: italic;
-    padding-top: 1%;
-    padding-bottom: 1%;
-  }
-
-  h2{
-    padding-top: 4%;
-  }
-
-
+.notFound {
+  width: 100%
 }
