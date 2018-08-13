@@ -1,8 +1,115 @@
 @import "_config.scss";
-@import "header.scss";
-@import "home_page.scss";
+
+// header styles //
+
+header {
+  position: relative;
+  display: block;
+  width: 100%;
+  background:$grey;
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+    .logotype {
+       position: absolute;
+       top:50%; left: 5%;
+       @include translateY(-50%);
+           }
+    .logo {
+        width: 70%;
+            }
+
+    nav,
+    nav ul,
+    nav ul li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        text-decoration: none;
+        color: $darkGrey;
+        font-family: 'Roboto', sans-serif;
+        @include transition(.3s ease-in-out);
+        cursor: poiner;
+
+      &:hover {
+        text-decoration: none;
+        color: $hover;
+        @include transition(.3s ease-in-out)
+      }
+
+    }
+  }
+
+  nav {
+    position: absolute;
+    top: 50%; right: 15px;
+    @include translateY(-50%);
 
 
+
+  ul li {
+    list-style-type: none;
+    display:  inline-block;
+    margin-right: 25px;
+
+  }
+
+ }
+
+}
+
+// header styles //
+
+
+// home_page styles //
+
+.home {
+    img {
+    width: 100%;
+  }
+}
+
+.penoizol {
+  h2, h5, p {
+    text-align: center;
+  }
+
+  h5 {
+    font-family: 'italic', sans-serif;
+    font-style: italic;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  h2 {
+    padding-top: 4%;
+  }
+}
+
+// home_page styles //
+
+
+// footer styles //
+footer {
+ background-color: #2a2a2a;
+ width: 100%;
+ font-family: 'Roboto', sans-serif;
+ font-size: 13px;
+ font-weight: 100;
+ color: white;
+
+  .container {
+    padding: 1% 5.5%;
+    margin: 0;
+  }
+  .copyright {
+    width: 50%;
+  }
+}
+
+// footer styles //
 
 .notFound {
   width: 100%
