@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import FontAwesome          from 'react-fontawesome';
+import {
+  Link
+}                           from 'react-router-dom';
 
 class HomePage extends Component {
   render() {
     return (
         <div className="home">
           <img src="pena.jpg" alt="Картинка не доступна =("></img>
-
           <div className="container-fluid penoizol">
             <h2>
               Пеноизол
@@ -15,22 +17,34 @@ class HomePage extends Component {
               Тепло Вашего дома – это спокойствие Вашей души
             </h5>
             <p>
-              Пеноизол  – универсальный теплоизоляционный материал, который  используется для утепления жилых и промышленных объектов. Достоинствами пеноизола , которые  выделяют его <br /> среди других видов теплоизоляционных материалов являются  высокие тепло и звукоизоляционные  свойства, долговечность, стойкость к температурным колебаниям<br /> и повышению влажности, пожаробезопасность.
+              Пеноизол  – универсальный теплоизоляционный материал, который  используется для утепления жилых и промышленных объектов. Достоинствами пеноизола, которые  выделяют его  среди других видов теплоизоляционных материалов являются  высокие тепло и звукоизоляционные  свойства, долговечность, стойкость к температурным колебаниям и повышению влажности, пожаробезопасность.
             </p>
           </div>
 
             <div className="icons">
               <div className="iconWrapper">
-                <FontAwesome className={ "fa-bolt" }  size='5x'></FontAwesome>
+                <Link to="/Price">
+                  <FontAwesome className="fa-bolt" size='5x'></FontAwesome>
+                  <h3>Экономия энергии</h3>
+                </Link>
               </div>
               <div className="iconWrapper">
-               <FontAwesome className={ "fa-volume-up" }  size='5x'></FontAwesome>
+                <Link to="/Price">
+                  <FontAwesome className="fa-volume-up" size='5x'></FontAwesome>
+                  <h3>Шумоизоляция</h3>
+                </Link>
               </div>
               <div className="iconWrapper">
-                <FontAwesome className={ "fa-fire-extinguisher" }  size='5x'></FontAwesome>
+                <Link to="/Price">
+                  <FontAwesome className="fa-fire-extinguisher" size='5x'></FontAwesome>
+                  <h3>Безопасность</h3>
+                </Link>
               </div>
               <div className="iconWrapper">
-                <FontAwesome className={ "fa-dollar" }  size='5x'></FontAwesome>
+                <Link to="/Price">
+                  <FontAwesome className="fa-dollar" size='5x'></FontAwesome>
+                  <h3>Доступная цена</h3>
+                </Link>
               </div>
             </div>
         </div>
