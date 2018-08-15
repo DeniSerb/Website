@@ -1,6 +1,6 @@
 @import "_config.scss";
 
-// header styles //
+// header //
 
 header {
   position: relative;
@@ -11,6 +11,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+
     .logotype {
        position: absolute;
        top:50%; left: 5%;
@@ -60,10 +61,57 @@ header {
 
 }
 
-// header styles //
+// header //
 
+// drop down //
 
-// home_page styles //
+.nav__menu-item {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    background-color: $grey;
+
+    .nav__submenu {
+      display: block;
+    }
+  }
+}
+
+.nav__submenu {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: $grey;
+  padding-top: 27%;
+}
+
+.nav__submenu-item {
+    text-align: center;
+    padding: 8%;
+    width: 100%;
+    height: 100%;
+
+  &:hover {
+    background: rgba(#000, 0.1);
+  }
+}
+
+.nav__submenu-item-1 {
+    text-align: center;
+    padding: 8%;
+    width: 100%;
+    height: 100%;
+    padding-right: 11%;
+
+  &:hover {
+    background: rgba(#000, 0.1);
+  }
+}
+
+// drop down //
+
+// home_page //
 
 .home {
     img {
@@ -93,10 +141,10 @@ header {
   }
 }
 
-// home_page styles //
+// home_page //
 
 
-// footer styles //
+// footer //
 footer {
  background-color: #2a2a2a;
  width: 100%;
@@ -114,9 +162,9 @@ footer {
   }
 }
 
-// footer styles //
+// footer //
 
-// icons styles //
+// icons //
 
 .icons{
   text-align: center;
@@ -148,7 +196,7 @@ footer {
   }
 }
 
-// icons styles //
+// icons //
 
 .notFound {
   width: 100%

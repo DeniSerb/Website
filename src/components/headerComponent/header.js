@@ -20,15 +20,16 @@ class Header extends Component {
        </script>
 
   <nav>
-    <ul>
+  <ul className="nav__menu">
       <li>
         <Link to='/'>Главная</Link>
       </li>
        <li>
        <Link to='/AboutCompany'>О компании</Link>
       </li>
-       <li>
+       <li className="nav__menu-item">
        <Link to='/WhyPenoizol'>Почему пеноизол?</Link>
+       <Submenu />
       </li>
        <li>
         <Link to='/SphereOfApplication'>Сфера применения</Link>
@@ -46,5 +47,31 @@ class Header extends Component {
     );
   }
 }
+
+class Submenu extends React.Component {
+  render() {
+    return (
+      <ul className="nav__submenu">
+        <Link to='/price'>
+         <li className="nav__submenu-item-1 ">
+          Экономия энергии
+         </li>
+        </Link>
+        <Link to='/price'>
+          <li className="nav__submenu-item ">
+            Шумоизоляция
+          </li>
+        </Link>
+        <Link to='/price'>
+          <li className="nav__submenu-item ">
+            Безопасность
+          </li>
+        </Link>
+      </ul>
+    )
+  }
+}
+
+
 
 export default Header;
