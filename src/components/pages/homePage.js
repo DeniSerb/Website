@@ -23,19 +23,19 @@ class HomePage extends Component {
 
             <div className="icons">
               <div className="iconWrapper">
-                <Link to="/Price">
+                <Link to="/EnergyEfficiency">
                   <FontAwesome className="fa-bolt" size='5x'></FontAwesome>
                   <h3>Экономия энергии</h3>
                 </Link>
               </div>
               <div className="iconWrapper">
-                <Link to="/Price">
+                <Link to="/NoiseCanseling">
                   <FontAwesome className="fa-volume-up" size='5x'></FontAwesome>
                   <h3>Шумоизоляция</h3>
                 </Link>
               </div>
               <div className="iconWrapper">
-                <Link to="/Price">
+                <Link to="/FireProtection">
                   <FontAwesome className="fa-fire-extinguisher" size='5x'></FontAwesome>
                   <h3>Безопасность</h3>
                 </Link>
