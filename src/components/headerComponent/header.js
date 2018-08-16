@@ -52,17 +52,17 @@ class Submenu extends React.Component {
   render() {
     return (
       <ul className="nav__submenu">
-        <Link to='/price'>
+        <Link to='/EnergyEfficiency'>
          <li className="nav__submenu-item-1 ">
           Экономия энергии
          </li>
         </Link>
-        <Link to='/price'>
+        <Link to='/NoiseCanseling'>
           <li className="nav__submenu-item ">
             Шумоизоляция
           </li>
         </Link>
-        <Link to='/price'>
+        <Link to='/FireProtection'>
           <li className="nav__submenu-item ">
             Безопасность
           </li>
