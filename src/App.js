@@ -18,7 +18,7 @@ import Price                from './components/pages/price.js';
 import Contacts             from './components/pages/contacts.js';
 import NotFound             from './components/pages/notFound.js';
 import FireProtection       from './components/pages/fireProtection.js';
-import EnergyEfficiency      from './components/pages/energyEfficiency.js';
+import EnergyEfficiency     from './components/pages/energyEfficiency.js';
 import NoiseCanseling       from './components/pages/noiseCanseling.js';
 
 //Style

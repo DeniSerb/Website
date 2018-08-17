@@ -6,7 +6,7 @@ class FireProtection extends Component {
       <div className="FireProtection">
 
         <h1>
-         Пожаробезопасность
+         Безопасность
         </h1>
 
         <p>
