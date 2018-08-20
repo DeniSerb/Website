@@ -4,11 +4,14 @@ import {
   Link
 }                           from 'react-router-dom';
 
+
+
 class HomePage extends Component {
   render() {
     return (
+
         <div className="home">
-          <img src="pena.jpg" alt="Картинка не доступна =("></img>
+          <div className="homeImg"></div>
           <div className="container-fluid penoizol">
             <h2>
               Пеноизол
@@ -48,6 +51,7 @@ class HomePage extends Component {
               </div>
             </div>
         </div>
+
     );
   }
 }
