@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {
   Link
 }                           from 'react-router-dom';
+import ResponsiveMenu       from 'react-responsive-navbar';
+import { FaBars, FaClose }  from 'react-icons/lib/fa';
 
 
 class Header extends Component {
@@ -20,7 +22,14 @@ class Header extends Component {
        </script>
 
   <nav>
-  <ul className="nav__menu">
+  <ResponsiveMenu
+        menuOpenButton={<FaBars size={30} color="Gray" />}
+        menuCloseButton={<FaClose size={30} color="Gray" />}
+        changeMenuOn="500px"
+        largeMenuClassName="large-menu-classname"
+        smallMenuClassName="small-menu-classname"
+        menu={
+    <ul className="nav__menu">
       <li>
         <Link to='/'>Главная</Link>
       </li>
@@ -41,6 +50,8 @@ class Header extends Component {
         <Link to='/Contacts'>Контакты</Link>
       </li>
     </ul>
+        }
+      />
   </nav>
 
 </header>
