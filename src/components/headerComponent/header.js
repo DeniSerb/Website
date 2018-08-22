@@ -25,9 +25,9 @@ class Header extends Component {
   <ResponsiveMenu
         menuOpenButton={<FaBars size={30} color="Gray" />}
         menuCloseButton={<FaClose size={30} color="Gray" />}
-        changeMenuOn="500px"
-        largeMenuClassName="large-menu-classname"
-        smallMenuClassName="small-menu-classname"
+        changeMenuOn="1100px"
+        largeMenuClassName="large-menu"
+        smallMenuClassName="small-menu"
         menu={
     <ul className="nav__menu">
       <li>

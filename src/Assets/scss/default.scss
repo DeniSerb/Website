@@ -20,12 +20,29 @@ header {
     .logo {
         width: 70%;
             }
-
-    nav,
-    nav ul,
-    nav ul li {
+     ul,
+    ul li {
       margin: 0;
       padding: 0;
+    list-style-type: none;
+    margin-right: 25px;
+  }
+
+
+}
+
+.large-menu{
+    position: absolute;
+    top: 50%; right: 15px;
+    @include translateY(-50%);
+
+    ul,
+    ul li {
+      margin: 0;
+      padding: 0;
+    list-style-type: none;
+    display:  inline-block;
+    margin-right: 25px;
 
       a {
         text-decoration: none;
@@ -42,30 +59,7 @@ header {
 
     }
   }
-
-  nav {
-    position: absolute;
-    top: 50%; right: 15px;
-    @include translateY(-50%);
-
-
-
-  ul li {
-    list-style-type: none;
-    display:  inline-block;
-    margin-right: 25px;
-
-  }
-
- }
-
-}
-
-// header //
-
-// drop down //
-
-.nav__menu-item {
+  .nav__menu-item {
   display: inline-block;
   position: relative;
 
@@ -108,8 +102,17 @@ header {
     background: rgba(#000, 0.1);
   }
 }
+}
 
-// drop down //
+.small-menu{
+  .nav__submenu {
+      display: none;
+    }
+}
+
+// header //
+
+
 
 // home_page //
 
