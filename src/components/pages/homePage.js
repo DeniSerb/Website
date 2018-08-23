@@ -25,25 +25,25 @@ class HomePage extends Component {
           </div>
 
             <div className="icons">
-              <div className="iconWrapper">
+              <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/EnergyEfficiency">
                   <FontAwesome className="fa-bolt" size='5x'></FontAwesome>
-                  <h3>Экономия энергии</h3>
+                  <h3>Экономия</h3>
                 </Link>
               </div>
-              <div className="iconWrapper">
+              <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/NoiseCanseling">
                   <FontAwesome className="fa-volume-up" size='5x'></FontAwesome>
                   <h3>Шумоизоляция</h3>
                 </Link>
               </div>
-              <div className="iconWrapper">
+              <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/FireProtection">
                   <FontAwesome className="fa-fire-extinguisher" size='5x'></FontAwesome>
                   <h3>Безопасность</h3>
                 </Link>
               </div>
-              <div className="iconWrapper">
+              <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/Price">
                   <FontAwesome className="fa-dollar" size='5x'></FontAwesome>
                   <h3>Доступная цена</h3>
