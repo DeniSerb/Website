@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Price extends Component {
   render() {
     return (
-      <div className="Price">
+      <div className="container Price">
         <h1>
           Цена
         </h1>

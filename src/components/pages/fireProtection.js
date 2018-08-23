@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class FireProtection extends Component {
   render() {
     return (
-      <div className="FireProtection">
+      <div className="container FireProtection">
         <h1>
           Безопасность
         </h1>

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class NoiseCanseling extends Component {
   render() {
     return (
-      <div className="NoiseCanseling">
+      <div className="container NoiseCanseling">
         <h1>
           Шумоизоляция
         </h1>

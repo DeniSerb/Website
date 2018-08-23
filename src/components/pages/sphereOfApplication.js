@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class SphereOfApplication extends Component {
   render() {
     return (
-      <div className="SphereOfApplication">
+      <div className="container SphereOfApplication">
         <h1>
           Сфера применения
         </h1>
