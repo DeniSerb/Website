@@ -25,7 +25,7 @@ class Header extends React.Component {
         <Navbar light color="blue-grey lighten-5" className="header" expand="lg" sticky="top">
           <NavbarBrand className="logo-wrapper">
             <Link to="/">
-              <img className="logo" src="logo.jpg" onclick="topFunction()" alt="" width="60%"></img>
+              <img className="col-md-6 logo" src="logo.jpg" onclick="topFunction()" alt="" width="60%"></img>
             </Link>
           </NavbarBrand>
           { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
