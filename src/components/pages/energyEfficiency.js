@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class EnergyEfficency extends Component {
   render() {
     return (
-      <div className="EnergyEfficency">
+      <div className="EnergyEfficency container">
 
         <h1>
           Экономия Энергии

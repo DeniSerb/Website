@@ -12,7 +12,7 @@ class HomePage extends Component {
 
         <div className="home">
           <div className="homeImg"></div>
-          <div className="container-fluid penoizol">
+          <div className="container penoizol">
             <h2>
               Пеноизол
             </h2>
@@ -24,7 +24,7 @@ class HomePage extends Component {
             </p>
           </div>
 
-            <div className="icons">
+            <div className="container icons">
               <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/EnergyEfficiency">
                   <FontAwesome className="fa-bolt" size='5x'></FontAwesome>
@@ -46,7 +46,7 @@ class HomePage extends Component {
               <div className="col-lg-3 col-md-6 col-sm-12 iconWrapper">
                 <Link to="/Price">
                   <FontAwesome className="fa-dollar" size='5x'></FontAwesome>
-                  <h3>Доступная цена</h3>
+                  <h3>Выгодная цена</h3>
                 </Link>
               </div>
             </div>
