@@ -30,7 +30,7 @@ class Header extends React.Component {
           </NavbarBrand>
           <script>
             function topFunction() {
-              document.documentElement.scrollTop = 0
+              window.scrollTo(0,0)
             }
           </script>
           { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
