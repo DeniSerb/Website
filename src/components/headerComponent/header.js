@@ -28,6 +28,11 @@ class Header extends React.Component {
               <img className="col-md-6 logo" src="logo.jpg" onclick="topFunction()" alt="" width="60%"></img>
             </Link>
           </NavbarBrand>
+          <script>
+            function topFunction() {
+              document.documentElement.scrollTop = 0
+            }
+          </script>
           { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
           <Collapse isOpen = { this.state.collapse } navbar>
             <NavbarNav right className="items">
