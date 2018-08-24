@@ -22,7 +22,7 @@ class Header extends React.Component {
     }
     render() {
       return (
-        <Navbar light color="blue-grey lighten-5" className="header" expand="lg" sticky="top">
+        <Navbar light color="blue-grey lighten-5" className="header" expand="xl" sticky="top">
           <NavbarBrand className="logo-wrapper">
             <Link to="/">
               <img className="col-md-6 logo" src="logo.jpg" onclick="topFunction()" alt="" width="60%"></img>

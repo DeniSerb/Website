@@ -42,7 +42,7 @@
 
 .homeImg{
   width: 100%;
-  height: 100vh;
+  height: 74vh;
   background-image: url('./pena.jpg');
   background-repeat: repeat-x;
   background-position: top center;
@@ -107,7 +107,7 @@ footer {
       @include transition(.3s ease-in-out)
     }
     h3{
-    padding-top: 5%;
+    padding-top: 2%;
     font-family: 'Roboto', sans-serif;
     color: #4b5762;
     }
