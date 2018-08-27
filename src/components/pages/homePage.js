@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FontAwesome          from 'react-fontawesome';
+import ScrollUpButton       from "react-scroll-up-button";
 import {
   Link
 }                           from 'react-router-dom';
@@ -11,6 +12,10 @@ class HomePage extends Component {
     return (
 
         <div className="home">
+          <ScrollUpButton
+          style={{width: 40}}
+          AnimationDuration={1000}
+           />
           <div className="homeImg"></div>
           <div className="container penoizol">
             <h2>

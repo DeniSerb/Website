@@ -41,7 +41,7 @@ class Header extends React.Component {
               </NavItem>
               <NavItem>
                 <Dropdown>
-                  <DropdownToggle nav caret>Почему пеноизол?</DropdownToggle>
+                  <DropdownToggle nav caret>Почему пеноизол</DropdownToggle>
                     <DropdownMenu>
                       <Link to="/EnergyEfficiency">
                         <DropdownItem className="drop-down">Экономия энергии</DropdownItem>
