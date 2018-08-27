@@ -13,3 +13,17 @@
 $hover: #676767;
 $grey: #f3f3f3;
 $darkGrey: #a0a0a0;
+
+@mixin pulse ($n) {
+0%{transform: scaleX(1) scaleY(1);}
+@for $i from 1 through 9 {
+$m:1;
+@if $i % 2 !=0 {$m: $n;}
+#{$i*10%}{transform:scaleX($m) scaleY($m)}
+}
+100%{transform: scaleX(1) scaleY(1);}
+}
+
+@keyframes pulse {
+@include pulse(0.94);
+}
