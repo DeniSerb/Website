@@ -1,1 +1,3 @@
-Read me!
+Comands:
+  npm start
+  gulp
