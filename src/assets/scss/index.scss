@@ -32,7 +32,7 @@ h4, p, a{
     font-family: 'Roboto', sans-serif;
     outline: none;
     &:hover {
-        color: $hover !important;
+        color: $green !important;
         @include transition(.4s ease-in-out);
       }
     &:before {
@@ -42,7 +42,7 @@ h4, p, a{
       height: 2px;
       bottom: 4px;
       left: 0;
-      background-color: $hover;
+      background-color: $green;
       visibility: hidden;
       -webkit-transform: scaleX(0);
       transform: scaleX(0);
@@ -121,7 +121,7 @@ h4, p, a{
     transform: scale(1.05);
     .read-more{
       display: block;
-      color: $hover;
+      color: $green;
     }
   }
 }
@@ -152,7 +152,7 @@ h4, p, a{
   }
 
   &:hover {
-      color: #fbb15d;
+      color: $orange;
       @include transition(.4s ease-in-out);
     }
   &:before {
@@ -162,7 +162,7 @@ h4, p, a{
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #fbb15d;
+    background-color: $orange;
     visibility: hidden;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -178,13 +178,13 @@ h4, p, a{
 
 .form-wrapper{
   height: 100vh;
-  background-color: #180c29;
+  background-color: $darkBlue;
   padding-top: 5%;
   color: #ffff;
 
   input, textarea,  input:focus, textarea:focus{
     border: 2px #ffff solid;
-    background-color: #180c29;
+    background-color: $darkBlue;
     border-radius: 0;
   }
 }
