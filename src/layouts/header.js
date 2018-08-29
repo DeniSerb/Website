@@ -1,31 +1,43 @@
 import React, { Component } from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavbarToggler, Collapse, NavItem, NavLink, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'mdbreact';
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarNav,
+  NavbarToggler,
+  Collapse,
+  NavItem,
+  NavLink,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
+}                            from 'mdbreact';
 import {
    Link
  }                           from 'react-router-dom';
 
-class Header extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            collapse: false,
-            isWideEnough: false,
-        };
+class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        collapse: false,
+        isWideEnough: false,
+    };
     this.onClick = this.onClick.bind(this);
-    }
+  }
 
-    onClick(){
-        this.setState({
-            collapse: !this.state.collapse,
-        });
-    }
-    render() {
-      return (
-        <Navbar light color="blue-grey lighten-5" className="header" expand="xl" sticky="top">
+  onClick(){
+    this.setState({
+        collapse: !this.state.collapse,
+    });
+  }
+
+  render() {
+    return (
+      <Navbar light className="header" expand="xl" sticky="top">
+        <div className="container-fluid">
           <NavbarBrand className="logo-wrapper">
-            <Link to="/">
-              <img className="col-md-6 logo" src="logo.jpg" onclick="topFunction()" alt="" width="60%"></img>
-            </Link>
+            <Link to="/" />
           </NavbarBrand>
           <script>
             function topFunction() {
@@ -33,7 +45,7 @@ class Header extends React.Component {
             }
           </script>
           { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
-          <Collapse isOpen = { this.state.collapse } navbar>
+          <Collapse isOpen = { this.state.collapse } className={this.state.collapse ? 'dark' : null} navbar>
             <NavbarNav right className="items">
               <NavItem active>
                 <NavLink to="/">Главная</NavLink>
@@ -65,9 +77,10 @@ class Header extends React.Component {
               </NavItem>
             </NavbarNav>
           </Collapse>
-        </Navbar>
+        </div>
+      </Navbar>
     );
-    }
+  }
 }
 
 export default Header;

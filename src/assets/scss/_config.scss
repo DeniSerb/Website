@@ -10,9 +10,9 @@
           transition: $e;
         };
 
-$hover: #676767;
-$grey: #f3f3f3;
-$darkGrey: #a0a0a0;
+$green: #439E74;
+$orange: #F1AA5B;
+$darkBlue: #180C29;
 
 @mixin pulse ($n) {
 0%{transform: scaleX(1) scaleY(1);}

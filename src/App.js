@@ -5,23 +5,9 @@ import {
   Switch,
 }                           from 'react-router-dom';
 
-//Pages
-
-import Header               from './components/headerComponent/header.js';
-import Footer               from './components/footerComponent/footer.js';
-import HomePage             from './components/pages/homePage.js';
-import AboutCompany         from './components/pages/aboutCompany.js';
-import SphereOfApplication  from './components/pages/sphereOfApplication.js';
-import Price                from './components/pages/price.js';
-import Contacts             from './components/pages/contacts.js';
-import NotFound             from './components/pages/notFound.js';
-import FireProtection       from './components/pages/fireProtection.js';
-import EnergyEfficiency     from './components/pages/energyEfficiency.js';
-import NoiseCanseling       from './components/pages/noiseCanseling.js';
-
-//Style
-
-import                           './Assets/css/default.min.css';
+import Header               from './layouts/header.js';
+import HomePage             from './pages/homePage.js';
+import                      './assets/css/index.min.css';
 
 
 
@@ -51,17 +37,8 @@ class App extends Component {
         <div className="App">
           <Header />
             <Switch>
-              <Route exact path='/'              component={HomePage}/>
-              <Route path='/AboutCompany'        component={AboutCompany}/>
-              <Route path='/SphereOfApplication' component={SphereOfApplication}/>
-              <Route path='/Price'               component={Price}/>
-              <Route path='/Contacts'            component={Contacts}/>
-              <Route path='/FireProtection'      component={FireProtection}/>
-              <Route path='/NoiseCanseling'      component={NoiseCanseling}/>
-              <Route path='/EnergyEfficiency'    component={EnergyEfficiency}/>
-              <Route                             component={NotFound}/>
+              <Route exact path='/' component={HomePage}/>
             </Switch>
-          <Footer />
         </div>
       </Router>
     );
