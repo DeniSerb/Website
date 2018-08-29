@@ -3,8 +3,7 @@ import {
   Container,
   Row,
   Col
-}                           from 'mdbreact';
-import { CARDS }            from '../models/cardsData'
+      }                     from 'mdbreact';
 
 class HomeHeader extends Component {
   render() {
@@ -19,24 +18,60 @@ class HomeHeader extends Component {
               являются высокие тепло и звукоизоляционные свойства, долговечность, стойкость к температурным
               колебаниям и повышению влажности, пожаробезопасность.
             </p>
-              {CARDS.map((card, index) => (
-                <div className={`services-item no-gutters row ${index === 1 || index === 3? 'right' : null}`}>
-                  <Col md="6">
-                    <img src={card.imgUrl} width="100%" height="auto" alt="wall" />
-                  </Col>
-                  <Col md="6">
-                    <h2>{card.title}</h2>
-                    <p className="grey-text mb-md-0 mb-5">
-                      {card.desc}
-                    </p>
-                    <hr />
-                    <span className="read-more">
-                      Подробнее
-                    </span>
-                  </Col>
+            <Row>
+              <Col md="6">
+                <div className="services-item">
+                  <img src="./wall.jpg" width="100%" alt="wall" />
+                  <h2>Утепление стен</h2>
+                  <p className="grey-text mb-md-0 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                  </p>
+                  <span className="read-more">
+                    Подробнее
+                  </span>
                 </div>
-              ))
-            }
+              </Col>
+              <Col md="6">
+                <div className="services-item">
+                  <img src="./roof.jpg" width="100%" alt="roof" />
+                  <h2>Утепление крыши</h2>
+                  <p className="grey-text mb-md-0 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                  </p>
+                  <span className="read-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Col>
+              <Col md="6">
+                <div className="services-item">
+                  <img src="./floor.jpg" width="100%" alt="floor" />
+                  <h2>Утепление полов</h2>
+                  <p className="grey-text mb-md-0 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                  </p>
+                  <span className="read-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Col>
+              <Col md="6">
+                <div className="services-item">
+                  <img src="./garage.jpg" width="100%" alt="garage" />
+                  <h2>Утепление ангаров</h2>
+                  <p className="grey-text mb-md-0 mb-5">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                  </p>
+                  <span className="read-more">
+                    Подробнее
+                  </span>
+                </div>
+              </Col>
+            </Row>
           </section>
         </Container>
       </div>
