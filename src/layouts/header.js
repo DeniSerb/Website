@@ -34,10 +34,10 @@ class Header extends Component {
 
   render() {
     return (
-      <Navbar light className="header" expand="xl" sticky="top">
+      <Navbar dark className="header" expand="xl" sticky="top">
         <div className="container-fluid">
           <Link to="/">
-            <div className="logo" to="/" />
+            <div className="logo" to="/" onclick="topFunction()" />
           </Link>
           <script>
             function topFunction() {
