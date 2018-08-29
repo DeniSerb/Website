@@ -18,58 +18,70 @@ class HomeHeader extends Component {
               колебаниям и повышению влажности, пожаробезопасность.
             </p>
             <Row>
-              <Col md="6">
-                <div className="services-item">
-                  <img src="./wall.jpg" width="100%" alt="wall" />
+              <div className="services-item no-gutters row">
+                <Col md="6">
+                  <img src="./wall.jpg" width="100%" height="auto" alt="wall" />
+                </Col>
+                <Col md="6">
                   <h2>Утепление стен</h2>
                   <p className="grey-text mb-md-0 mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Reprehenderit maiores aperiam minima assumenda deleniti hic.
                   </p>
+                  <hr />
                   <span className="read-more">
                     Подробнее
                   </span>
-                </div>
-              </Col>
-              <Col md="6">
-                <div className="services-item">
-                  <img src="./roof.jpg" width="100%" alt="roof" />
+                </Col>
+              </div>
+              <div className="right services-item no-gutters row">
+                <Col md="6">
+                  <img src="./roof.jpg" width="100%" height="auto" alt="wall" />
+                </Col>
+                <Col md="6">
                   <h2>Утепление крыши</h2>
                   <p className="grey-text mb-md-0 mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Reprehenderit maiores aperiam minima assumenda deleniti hic.
                   </p>
+                  <hr />
                   <span className="read-more">
                     Подробнее
                   </span>
-                </div>
-              </Col>
-              <Col md="6">
-                <div className="services-item">
-                  <img src="./floor.jpg" width="100%" alt="floor" />
+                </Col>
+              </div>
+              <div className="services-item no-gutters row">
+                <Col md="6">
+                  <img src="./floor.jpg" width="100%" height="auto" alt="wall" />
+                </Col>
+                <Col md="6">
                   <h2>Утепление полов</h2>
                   <p className="grey-text mb-md-0 mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Reprehenderit maiores aperiam minima assumenda deleniti hic.
                   </p>
+                  <hr />
                   <span className="read-more">
                     Подробнее
                   </span>
-                </div>
-              </Col>
-              <Col md="6">
-                <div className="services-item">
-                  <img src="./garage.jpg" width="100%" alt="garage" />
+                </Col>
+              </div>
+              <div className="right services-item no-gutters row">
+                <Col md="6">
+                  <img src="./garage.jpg" width="100%" height="auto" alt="wall" />
+                </Col>
+                <Col md="6">
                   <h2>Утепление ангаров</h2>
                   <p className="grey-text mb-md-0 mb-5">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Reprehenderit maiores aperiam minima assumenda deleniti hic.
                   </p>
+                  <hr />
                   <span className="read-more">
                     Подробнее
                   </span>
-                </div>
-              </Col>
+                </Col>
+              </div>
             </Row>
           </section>
         </Container>
