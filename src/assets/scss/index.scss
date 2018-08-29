@@ -116,6 +116,8 @@ h4, p, a{
 
   .read-more{
     display: none;
+    position: absolute;
+    width: 82%;
   }
 
   &:hover {
