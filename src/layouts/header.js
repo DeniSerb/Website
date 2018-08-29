@@ -36,9 +36,9 @@ class Header extends Component {
     return (
       <Navbar light className="header" expand="xl" sticky="top">
         <div className="container-fluid">
-          <NavbarBrand className="logo-wrapper">
-            <Link to="/" />
-          </NavbarBrand>
+          <Link to="/">
+            <div className="logo" to="/" />
+          </Link>
           <script>
             function topFunction() {
               window.scrollTo(0,0)
