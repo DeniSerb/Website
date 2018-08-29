@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {
   Container,
   Row,
-  Col}                      from 'mdbreact';
+  Col
+}                           from 'mdbreact';
+import { CARDS }            from '../models/cardsData'
 
 class HomeHeader extends Component {
   render() {
@@ -17,72 +19,24 @@ class HomeHeader extends Component {
               являются высокие тепло и звукоизоляционные свойства, долговечность, стойкость к температурным
               колебаниям и повышению влажности, пожаробезопасность.
             </p>
-            <Row>
-              <div className="services-item no-gutters row">
-                <Col md="6">
-                  <img src="./wall.jpg" width="100%" height="auto" alt="wall" />
-                </Col>
-                <Col md="6">
-                  <h2>Утепление стен</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <hr />
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </Col>
-              </div>
-              <div className="right services-item no-gutters row">
-                <Col md="6">
-                  <img src="./roof.jpg" width="100%" height="auto" alt="wall" />
-                </Col>
-                <Col md="6">
-                  <h2>Утепление крыши</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <hr />
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </Col>
-              </div>
-              <div className="services-item no-gutters row">
-                <Col md="6">
-                  <img src="./floor.jpg" width="100%" height="auto" alt="wall" />
-                </Col>
-                <Col md="6">
-                  <h2>Утепление полов</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <hr />
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </Col>
-              </div>
-              <div className="right services-item no-gutters row">
-                <Col md="6">
-                  <img src="./garage.jpg" width="100%" height="auto" alt="wall" />
-                </Col>
-                <Col md="6">
-                  <h2>Утепление ангаров</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <hr />
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </Col>
-              </div>
-            </Row>
+              {CARDS.map((card, index) => (
+                <div className={`services-item no-gutters row ${index === 1 || index === 3? 'right' : null}`}>
+                  <Col md="6">
+                    <img src={card.imgUrl} width="100%" height="auto" alt="wall" />
+                  </Col>
+                  <Col md="6">
+                    <h2>{card.title}</h2>
+                    <p className="grey-text mb-md-0 mb-5">
+                      {card.desc}
+                    </p>
+                    <hr />
+                    <span className="read-more">
+                      Подробнее
+                    </span>
+                  </Col>
+                </div>
+              ))
+            }
           </section>
         </Container>
       </div>
