@@ -72,12 +72,13 @@ h4, p, a{
   background-position: top center;
   background-attachment: fixed;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 50vh;
   position: relative;
   padding: 20% 0;
 }
 
 .bordered{
+  margin-top: 5%;
   color: #ffff;
   border: 4px #ffff solid;
   display: flex;
