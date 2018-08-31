@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes            from 'prop-types'
 import {
   Navbar,
   NavbarNav,
@@ -12,28 +13,35 @@ import {
   DropdownItem
 }                            from 'mdbreact';
 import {
-   Link
+   Link,
+   withRouter
  }                           from 'react-router-dom';
 
 class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        collapse: false,
-        isWideEnough: false,
+      collapse: false,
+      isWideEnough: false,
     };
     this.onClick = this.onClick.bind(this);
   }
 
+  static propTypes = {
+    location: PropTypes.object.isRequired,
+  }
+
   onClick(){
     this.setState({
-        collapse: !this.state.collapse,
+      collapse: !this.state.collapse,
     });
   }
 
   render() {
+    const { location } = this.props
+
     return (
-      <Navbar dark className="header" expand="xl" sticky="top">
+      <Navbar dark className={location.pathname === '/' ? 'header' : 'header colored-header'} expand="xl" sticky="top">
         <div className="container-fluid">
           <Link to="/">
             <div className="logo" to="/" onclick="topFunction()" />
@@ -82,4 +90,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
