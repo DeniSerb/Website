@@ -37,11 +37,11 @@ class App extends Component {
         <div className="App">
           <Header />
             <Switch>
-              <Route exact path='/'                component={HomePage}/>
-              <Route path='/EnergyEfficiency'      component={EnergyEfficiency}/>
-              <Route exact path='/NoiseCanseling'  component={NoiseCanseling}/>
-              <Route exact path='/FireProtection'  component={FireProtection}/>
-              <Route component={NotFound}/>
+              <Route exact path='/'           component={HomePage}/>
+              <Route path='/EnergyEfficiency' component={EnergyEfficiency}/>
+              <Route path='/NoiseCanseling'   component={NoiseCanseling}/>
+              <Route path='/FireProtection'   component={FireProtection}/>
+              <Route                          component={NotFound}/>
             </Switch>
         </div>
       </Router>
