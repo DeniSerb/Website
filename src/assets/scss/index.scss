@@ -61,6 +61,14 @@ h4, p, a{
   }
 }
 
+.colored-header {
+  background-color: #ffff;
+
+  ul a {
+    color : #F2AB5A !important;
+  }
+}
+
 .home-header{
   display: flex;
   flex-direction: row;
