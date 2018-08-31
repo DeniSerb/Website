@@ -5,13 +5,13 @@ import {
   Switch,
 }                           from 'react-router-dom';
 
-import Header               from './layouts/header.js';
-import HomePage             from './pages/homePage.js';
+import Header               from './layouts/header';
+import HomePage             from './pages/homePage';
+import NotFound             from './pages/notFound';
+import EnergyEfficiency     from './pages/energyEfficiency';
+import NoiseCanseling       from './pages/noiseCanseling';
+import FireProtection       from './pages/fireProtection';
 import                      './assets/css/index.min.css';
-
-
-
-
 
 class App extends Component {
 
@@ -37,7 +37,11 @@ class App extends Component {
         <div className="App">
           <Header />
             <Switch>
-              <Route exact path='/' component={HomePage}/>
+              <Route exact path='/'           component={HomePage}/>
+              <Route path='/EnergyEfficiency' component={EnergyEfficiency}/>
+              <Route path='/NoiseCanseling'   component={NoiseCanseling}/>
+              <Route path='/FireProtection'   component={FireProtection}/>
+              <Route                          component={NotFound}/>
             </Switch>
         </div>
       </Router>
