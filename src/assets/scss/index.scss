@@ -14,8 +14,16 @@ h4, p, a{
   font-weight: 400 !important;
 }
 
-.header {
+.header{
   width: 100%;
+  position: absolute;
+}
+
+.fixed{
+  position: fixed;
+  -webkit-box-shadow: 2px 7px 5px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 2px 7px 5px -4px rgba(0,0,0,0.2);
+  box-shadow: 2px 7px 5px -4px rgba(0,0,0,0.2);
 }
 
 .logo{

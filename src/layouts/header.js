@@ -23,11 +23,7 @@ class Header extends Component {
     this.state = {
       collapse: false,
       isWideEnough: false,
-      style : {
-        position: 'absolute',
-        background: 'transparent',
-        color: '#ffff'
-      }
+      scrolled: false,
     };
     this.onClick = this.onClick.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
@@ -47,9 +43,9 @@ class Header extends Component {
 
   handleScroll(e) {
     if (window.scrollY > 650) {
-      this.setState({style: { position: 'fixed' }});
+      this.setState({ scrolled: true });
     } else {
-      this.setState({ style: { position: 'absolute' }});
+      this.setState({ scrolled: false });
     }
   }
 
@@ -63,10 +59,13 @@ class Header extends Component {
     const { location } = this.props
 
     return (
-      <Navbar dark className={location.pathname === '/' ? 'header' : 'header colored-header'}
+      <Navbar dark
+        className={`header
+          ${location.pathname === '/' ? null : 'colored-header'}
+          ${this.state.scrolled ? 'fixed colored-header' : null}`
+        }
         expand="xl"
         sticky="top"
-        style={this.state.style}
       >
         <div className="container-fluid">
           <Link to="/">
