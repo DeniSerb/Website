@@ -23,12 +23,30 @@ class Header extends Component {
     this.state = {
       collapse: false,
       isWideEnough: false,
+      scrolled: false,
     };
     this.onClick = this.onClick.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
   static propTypes = {
     location: PropTypes.object.isRequired,
+  }
+
+  componentWillMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(e) {
+    if (window.scrollY > 650) {
+      this.setState({ scrolled: true });
+    } else {
+      this.setState({ scrolled: false });
+    }
   }
 
   onClick(){
@@ -41,17 +59,19 @@ class Header extends Component {
     const { location } = this.props
 
     return (
-      <Navbar dark className={location.pathname === '/' ? 'header' : 'header colored-header'} expand="xl" sticky="top">
+      <Navbar dark
+        className={`header
+          ${location.pathname === '/' ? null : 'colored-header'}
+          ${this.state.scrolled ? 'fixed colored-header' : null}`
+        }
+        expand="xl"
+        sticky="top"
+      >
         <div className="container-fluid">
           <Link to="/">
-            <div className="logo" to="/" onclick="topFunction()" />
+            <div className="logo" to="/" />
           </Link>
-          <script>
-            function topFunction() {
-              window.scrollTo(0,0)
-            }
-          </script>
-          { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } />}
+          { !this.state.isWideEnough && <NavbarToggler onClick = { this.onClick } /> }
           <Collapse isOpen = { this.state.collapse } className={this.state.collapse ? 'dark' : null} navbar>
             <NavbarNav right className="items">
               <NavItem active>
