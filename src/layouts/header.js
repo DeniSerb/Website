@@ -61,7 +61,7 @@ class Header extends Component {
     return (
       <Navbar dark
         className={`header
-          ${location.pathname === '/' ? null : 'colored-header'}
+          ${location.pathname === '/' ? null : 'colored-header-next'}
           ${this.state.scrolled ? 'fixed colored-header' : null}`
         }
         expand="xl"
