@@ -80,10 +80,15 @@ h4, p, a{
 }
 
 .colored-header-next {
-  background-color: #f0eeee;
+  background-color: #2A3334;
   position: relative;
   ul a {
-    color : $orange !important;
+    &:hover {
+      color : $orange !important;
+    }
+        &:before {
+      background-color: $orange !important;
+    }
   }
 }
 
