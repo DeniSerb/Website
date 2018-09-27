@@ -80,7 +80,7 @@ class Header extends Component {
               <NavItem>
                 <Dropdown>
                   <DropdownToggle nav caret>Почему пеноизол</DropdownToggle>
-                    <DropdownMenu>
+                    <DropdownMenu className="drop-menu">
                       <Link to="/EnergyEfficiency">
                         <DropdownItem className="drop-down">Экономия энергии</DropdownItem>
                       </Link>

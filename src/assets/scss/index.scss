@@ -67,6 +67,25 @@ h4, p, a{
   }
 }
 
+.drop-menu {
+  a {
+    text-decoration: none;
+    &:hover:before {
+      visibility: hidden!important;
+    }
+  }
+}
+
+.drop-down {
+  cursor: pointer;
+  &:hover {
+    background: #2A3334 !important;
+    color:$green;
+    opacity: 0.9;
+    @include transition(.4s ease-in-out);
+  }
+}
+
 .colored-header {
   background-color: #2A3334;
   ul a {
@@ -127,7 +146,7 @@ h4, p, a{
 .dark{
   background: #2A3334 !important;
   padding: 4%;
-  opacity: 0.9;
+  opacity: 0.97;
 }
 
 .services-wrapper{
