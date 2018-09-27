@@ -68,10 +68,14 @@ h4, p, a{
 }
 
 .colored-header {
-  background-color: #f0eeee;
-
+  background-color: #2A3334;
   ul a {
-    color : #F2AB5A !important;
+    &:hover {
+      color : #F2AB5A !important;
+    }
+        &:before {
+      background-color: #F2AB5A !important;
+    }
   }
 }
 
@@ -114,7 +118,7 @@ h4, p, a{
 }
 
 .dark{
-  background: #1b1b1b !important;
+  background: #2A3334 !important;
   padding: 4%;
   opacity: 0.9;
 }
