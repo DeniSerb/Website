@@ -110,7 +110,6 @@ h4, p, a{
 }
 
 .bordered{
-  margin-top: 5%;
   color: #ffff;
   border: 4px #ffff solid;
   display: flex;
@@ -120,6 +119,9 @@ h4, p, a{
   font-size: 35px;
   height: 260px;
   width: 60%;
+  @media (max-width: 600px) {
+    margin-top: 10%
+  }
 }
 
 .dark{
