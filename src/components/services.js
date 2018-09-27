@@ -4,6 +4,7 @@ import {
   Row,
   Col
       }                     from 'mdbreact';
+import { Link }             from 'react-router-dom';
 
 class HomeHeader extends Component {
   render() {
@@ -20,56 +21,64 @@ class HomeHeader extends Component {
             </p>
             <Row>
               <Col md="6">
-                <div className="services-item">
-                  <img src="./wall.jpg" width="100%" alt="wall" />
-                  <h2>Утепление стен</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </div>
+                <Link to="/EnergyEfficiency">
+                  <div className="services-item">
+                    <img src="./wall.jpg" width="100%" alt="wall" />
+                    <h2>Утепление стен</h2>
+                    <p className="grey-text mb-md-0 mb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                    </p>
+                    <span className="read-more">
+                      Подробнее
+                    </span>
+                  </div>
+                </Link>
               </Col>
               <Col md="6">
-                <div className="services-item">
-                  <img src="./roof.jpg" width="100%" alt="roof" />
-                  <h2>Утепление крыши</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </div>
+                <Link to="/EnergyEfficiency">
+                  <div className="services-item">
+                    <img src="./roof.jpg" width="100%" alt="roof" />
+                    <h2>Утепление крыши</h2>
+                    <p className="grey-text mb-md-0 mb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                    </p>
+                    <span className="read-more">
+                      Подробнее
+                    </span>
+                  </div>
+                </Link>
               </Col>
               <Col md="6">
-                <div className="services-item">
-                  <img src="./floor.jpg" width="100%" alt="floor" />
-                  <h2>Утепление полов</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </div>
+                <Link to="/EnergyEfficiency">
+                  <div className="services-item">
+                    <img src="./floor.jpg" width="100%" alt="floor" />
+                    <h2>Утепление полов</h2>
+                    <p className="grey-text mb-md-0 mb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                    </p>
+                    <span className="read-more">
+                      Подробнее
+                    </span>
+                  </div>
+                </Link>
               </Col>
               <Col md="6">
-                <div className="services-item">
-                  <img src="./garage.jpg" width="100%" alt="garage" />
-                  <h2>Утепление ангаров</h2>
-                  <p className="grey-text mb-md-0 mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Reprehenderit maiores aperiam minima assumenda deleniti hic.
-                  </p>
-                  <span className="read-more">
-                    Подробнее
-                  </span>
-                </div>
+                <Link to="/EnergyEfficiency">
+                  <div className="services-item">
+                    <img src="./garage.jpg" width="100%" alt="garage" />
+                    <h2>Утепление ангаров</h2>
+                    <p className="grey-text mb-md-0 mb-5">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                    </p>
+                    <span className="read-more">
+                      Подробнее
+                    </span>
+                  </div>
+                 </Link>
               </Col>
             </Row>
           </section>

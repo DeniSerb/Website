@@ -71,10 +71,10 @@ h4, p, a{
   background-color: #2A3334;
   ul a {
     &:hover {
-      color : #F2AB5A !important;
+      color : $orange !important;
     }
         &:before {
-      background-color: #F2AB5A !important;
+      background-color: $orange !important;
     }
   }
 }
@@ -83,7 +83,7 @@ h4, p, a{
   background-color: #f0eeee;
   position: relative;
   ul a {
-    color : #F2AB5A !important;
+    color : $orange !important;
   }
 }
 
@@ -124,6 +124,10 @@ h4, p, a{
 }
 
 .services-wrapper{
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
   padding: 5% 0;
   background-color:#e5e5e5;
    img{
@@ -146,9 +150,16 @@ h4, p, a{
   transition: all 0.3s ease;
 
   .read-more{
-    display: none;
-    position: absolute;
-    width: 82%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    color : $green;
+    display: block;
+    position: relative;
+    width: 100%;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
   }
 
   &:hover {
@@ -156,8 +167,12 @@ h4, p, a{
     -ms-transform: scale(1.05);
     transform: scale(1.05);
     .read-more{
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
       display: block;
-      color: $green;
+      color: $orange;
+      @include transition(.4s ease-in-out)
     }
   }
 }
