@@ -3,6 +3,7 @@ import ScrollUpButton       from "react-scroll-up-button";
 
 import HomeHeader           from '../components/header';
 import Services             from '../components/services';
+import Price                from '../components/price';
 import Features             from '../components/features';
 import ContactForm          from '../components/contact-form';
 
@@ -12,6 +13,7 @@ class HomePage extends Component {
       <div>
         <HomeHeader />
         <Services />
+        <Price />
         <Features />
         <ContactForm />
         <ScrollUpButton

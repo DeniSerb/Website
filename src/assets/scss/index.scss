@@ -203,6 +203,10 @@ h4, p, a{
   }
 }
 
+.price-wrapper{
+  padding-bottom: 5%;
+}
+
 .features-wrapper{
   justify-content: center;
   background: linear-gradient(
@@ -267,6 +271,15 @@ h4, p, a{
 .green-btn{
   background-color: #439E74;
   color: #ffff;
+}
+
+.table-heading {
+  text-align: center;
+}
+
+.table-subheading {
+  text-align: center;
+  font-weight: bold;
 }
 
 .notFound {
