@@ -243,11 +243,13 @@ h4, p, a{
     color: $orange;
     @include transition(.4s ease-in-out);
   }
-
+  @media (min-width: 768px) and (max-width: 991px) {
+    margin-right: 10%;
+    margin-left: 12%;
+  }
 }
 
 .form-wrapper{
-  height: 100vh;
   background-color: $darkBlue;
   padding-top: 5%;
   color: #ffff;
