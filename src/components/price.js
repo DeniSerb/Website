@@ -3,13 +3,12 @@ import { Container, Table, TableBody, TableHead  } from 'mdbreact';
 
 
 const Price = () => (
-    <div className="price-wrapper">
-  <Container>
-<h2 className="h1-responsive font-weight-bold my-5 text-center">
-              Наша компания работает по следующим ценам
-            </h2>
+  <div className="price-wrapper">
+    <Container>
+      <h2 className="h1-responsive font-weight-bold my-5 text-center">
+        Выбрав утеплитель пеноизол именно у нас – вы сможете быстро, дешево и эффективно утеплить свой дом.
+      </h2>
       <Table striped small bordered className="table">
-      <caption>Выбрав утеплитель пеноизол именно у нас – вы сможете быстро, дешево и эффективно утеплить свой дом.</caption>
       <TableHead>
         <tr>
           <th colspan="2" className="table-heading">Основные работы:</th>
