@@ -225,8 +225,7 @@ h4, p, a{
 }
 
 .feature-item{
-  padding: 5% 0;
-  cursor : pointer;
+  margin: 5% 0;
   -webkit-transition: all 0.3s ease;;
   -moz-transition: all 0.3s ease;;
   -o-transition: all 0.3s ease;;
@@ -246,6 +245,10 @@ h4, p, a{
   @media (min-width: 768px) and (max-width: 991px) {
     margin-right: 10%;
     margin-left: 12%;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
   }
 }
 

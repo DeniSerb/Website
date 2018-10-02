@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import {
+   Link,
+ }                          from 'react-router-dom';
+import {
   Container,
   Row,
   Col,
@@ -17,16 +20,22 @@ class Features extends Component {
             </h2>
             <Row>
             <Col xs="12" md="3" className="text-center feature-item">
-              <Fa icon="bolt fa-4x"/>
-              <h3>Экономия</h3>
+              <Link to="/EnergyEfficiency">
+                <Fa icon="bolt fa-4x"/>
+                <h3>Экономия</h3>
+              </Link>
             </Col>
             <Col xs="12" md="3" className="text-center feature-item">
-              <Fa icon="volume-up fa-4x"/>
-              <h3>Шумоизоляция</h3>
+              <Link to="/NoiseCanseling">
+                <Fa icon="volume-up fa-4x"/>
+                <h3>Шумоизоляция</h3>
+              </Link>
             </Col>
             <Col xs="12" md="3" className="text-center feature-item">
-              <Fa icon="fire-extinguisher fa-4x"/>
-              <h3>Безопасность</h3>
+              <Link to="/FireProtection">
+                <Fa icon="fire-extinguisher fa-4x"/>
+                <h3>Безопасность</h3>
+              </Link>
             </Col>
             <Col xs="12" md="3" className="text-center feature-item">
               <Fa icon="dollar fa-4x" />
