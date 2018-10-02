@@ -275,7 +275,7 @@ h4, p, a{
   color: #ffff;
 }
 
-.table-heading {
+th {
   text-align: center;
 }
 
@@ -292,7 +292,27 @@ h4, p, a{
 .sphere-content-wrapper {
   padding-top: 1%;
   padding-bottom: 1%;
+  p {
+    text-indent: 20px;
+  }
   @media (max-width: 767px) {
+    p {
+      padding-top: 3%;
+    }
+  }
+}
+
+.energy-wrapper {
+  .left {
+    text-align: left;
+  }
+  td {
+    text-align: center;
+  }
+  p {
+    text-indent: 20px;
+   }
+     @media (max-width: 767px) {
     p {
       padding-top: 3%;
     }
