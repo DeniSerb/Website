@@ -23,7 +23,7 @@ class HomeHeader extends Component {
               <Col md="6">
                 <Link to="/EnergyEfficiency">
                   <div className="services-item">
-                    <img src="./wall.jpg" width="100%" alt="wall" />
+                    <img src="images/wall.jpg" width="100%" alt="wall" />
                     <h2>Утепление стен</h2>
                     <p className="grey-text mb-md-0 mb-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -38,7 +38,7 @@ class HomeHeader extends Component {
               <Col md="6">
                 <Link to="/EnergyEfficiency">
                   <div className="services-item">
-                    <img src="./roof.jpg" width="100%" alt="roof" />
+                    <img src="images/roof.jpg" width="100%" alt="roof" />
                     <h2>Утепление крыши</h2>
                     <p className="grey-text mb-md-0 mb-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -53,7 +53,7 @@ class HomeHeader extends Component {
               <Col md="6">
                 <Link to="/EnergyEfficiency">
                   <div className="services-item">
-                    <img src="./floor.jpg" width="100%" alt="floor" />
+                    <img src="images/floor.jpg" width="100%" alt="floor" />
                     <h2>Утепление полов</h2>
                     <p className="grey-text mb-md-0 mb-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -68,7 +68,7 @@ class HomeHeader extends Component {
               <Col md="6">
                 <Link to="/EnergyEfficiency">
                   <div className="services-item">
-                    <img src="./garage.jpg" width="100%" alt="garage" />
+                    <img src="images/garage.jpg" width="100%" alt="garage" />
                     <h2>Утепление ангаров</h2>
                     <p className="grey-text mb-md-0 mb-5">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.

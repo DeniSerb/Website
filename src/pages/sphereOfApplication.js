@@ -17,7 +17,7 @@ const SphereOfApplication = () => (
       <h4 className="h1-responsive font-weight-bold my-5 text-center two">Никаких грызунов!</h4>
       <Row className="sphere-content-wrapper">
         <Col md="6">
-          <img src="./5.jpg" width="100%" alt="wall" />
+          <img src="images/5.jpg" width="100%" alt="wall" />
         </Col>
         <Col md="6">
           <p>
@@ -38,13 +38,13 @@ const SphereOfApplication = () => (
           </p>
         </Col>
         <Col md="6">
-          <img src="./33.jpg" width="100%" alt="wall" />
+          <img src="images/33.jpg" width="100%" alt="wall" />
         </Col>
        </Row>
        <h4 className="h1-responsive font-weight-bold my-5 text-center two">Герметичная изоляция!</h4>
        <Row className="sphere-content-wrapper">
         <Col md="6">
-           <img src="./5.jpg" width="100%" alt="wall" />
+           <img src="images/5.jpg" width="100%" alt="wall" />
         </Col>
         <Col md="6">
            <p>
@@ -68,7 +68,7 @@ const SphereOfApplication = () => (
           </p>
         </Col>
         <Col md="6">
-           <img src="./66.jpg" width="100%" alt="wall" />
+           <img src="images/66.jpg" width="100%" alt="wall" />
         </Col>
       </Row>
     </Container>

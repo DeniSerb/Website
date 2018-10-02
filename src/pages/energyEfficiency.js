@@ -20,7 +20,7 @@ const EnergyEfficiency = () => (
       </h5>
       <Row>
       <Col md="6">
-        <img src="21.jpg" width="100%" alt="wall" />
+        <img src="images/21.jpg" width="100%" alt="wall" />
       </Col>
       <Col md="6">
       <p>
