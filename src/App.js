@@ -51,7 +51,7 @@ class App extends Component {
         </Router>
         <ScrollUpButton
           style={{width: 40}}
-          AnimationDuration={1300}
+          AnimationDuration={1500}
         />
       </div>
     );
