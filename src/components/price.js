@@ -8,7 +8,6 @@ const Price = () => (
       <h2 className="h1-responsive font-weight-bold my-5 text-center">
         Выбрав утеплитель пеноизол именно у нас – вы сможете быстро, дешево и эффективно утеплить свой дом.
       </h2>
-      <div className="table-responsive">
         <Table striped small bordered>
         <TableHead>
           <tr>
@@ -72,7 +71,6 @@ const Price = () => (
           </tr>
           </TableBody>
         </Table>
-      </div>
     </Container>
   </div>
 )

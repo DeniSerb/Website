@@ -24,7 +24,6 @@ const NoiseCanseling = () => (
       <h4 className="h1-responsive font-weight-bold my-5 text-center">
         Звукоизоляционные испытания материала Пеноизол
       </h4>
-        <div class="table-responsive">
         <Table striped responsive small bordered>
         <TableHead>
           <tr>
@@ -115,7 +114,6 @@ const NoiseCanseling = () => (
           </tr>
           </TableBody>
         </Table>
-      </div>
     </Container>
   </div>
 );

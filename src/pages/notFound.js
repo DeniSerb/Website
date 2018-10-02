@@ -6,7 +6,7 @@ import {
 const NotFound = () => (
   <div>
     <Link to="/">
-      <img className="notFound" src="404.jpg" alt="Страница не найдена =("></img>   
+      <img className="notFound" src="images/404.jpg" alt="Страница не найдена =("></img>   
     </Link>
   </div>
 );

@@ -40,7 +40,6 @@ const EnergyEfficiency = () => (
       <h1 className="h1-responsive font-weight-bold my-5 text-center">
         Физичиские свойства
       </h1>
-      <div class="table-responsive">
         <Table striped responsive small bordered>
         <TableHead>
           <tr>
@@ -107,7 +106,6 @@ const EnergyEfficiency = () => (
           </tr>
           </TableBody>
         </Table>
-      </div>
     </Container>
   </div>
 );
