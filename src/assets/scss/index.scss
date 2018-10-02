@@ -335,3 +335,14 @@ th {
     }
   }
 }
+
+.protection-wrapper {
+  p {
+    text-indent: 20px;
+   }
+   @media (max-width: 767px) {
+    p {
+      padding-top: 3%;
+    }
+  }
+}
