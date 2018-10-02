@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollUpButton       from "react-scroll-up-button";
 import {
   BrowserRouter as Router,
   Route,
@@ -34,19 +35,25 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div className="App">
-          <Header />
-            <Switch>
-              <Route exact path='/'                component={HomePage}/>
-              <Route path='/EnergyEfficiency'      component={EnergyEfficiency}/>
-              <Route path='/NoiseCanseling'        component={NoiseCanseling}/>
-              <Route path='/FireProtection'        component={FireProtection}/>
-              <Route path='/SphereOfApplication'   component={SphereOfApplication}/>
-              <Route                               component={NotFound}/>
-            </Switch>
-        </div>
-      </Router>
+      <div>
+        <Router>
+          <div className="App">
+            <Header />
+              <Switch>
+                <Route exact path='/'                component={HomePage}/>
+                <Route path='/EnergyEfficiency'      component={EnergyEfficiency}/>
+                <Route path='/NoiseCanseling'        component={NoiseCanseling}/>
+                <Route path='/FireProtection'        component={FireProtection}/>
+                <Route path='/SphereOfApplication'   component={SphereOfApplication}/>
+                <Route                               component={NotFound}/>
+              </Switch>
+          </div>
+        </Router>
+        <ScrollUpButton
+          style={{width: 40}}
+          AnimationDuration={1300}
+        />
+      </div>
     );
   }
 }

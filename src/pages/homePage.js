@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ScrollUpButton       from "react-scroll-up-button";
 
 import HomeHeader           from '../components/header';
 import Services             from '../components/services';
@@ -16,10 +15,6 @@ class HomePage extends Component {
         <Price />
         <Features />
         <ContactForm />
-        <ScrollUpButton
-          style={{width: 40}}
-          AnimationDuration={2000}
-        />
       </div>
     );
   }
