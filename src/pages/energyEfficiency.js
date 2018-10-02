@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Container,
   Row,
@@ -15,9 +14,9 @@ const EnergyEfficiency = () => (
       <h1 className="h1-responsive font-weight-bold my-5 text-center">
         Економия енергии
       </h1>
-      <h5 className="h1-responsive font-weight-bold my-5 text-center">
+      <h4 className="h1-responsive font-weight-bold my-5 text-center">
         Затраты на утепление окупаются на второй год эксплуатации дома!
-      </h5>
+      </h4>
       <Row>
       <Col md="6">
         <img src="images/21.jpg" width="100%" alt="wall" />
