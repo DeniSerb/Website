@@ -4,7 +4,6 @@ import HomeHeader           from '../components/header';
 import Services             from '../components/services';
 import Price                from '../components/price';
 import Features             from '../components/features';
-import ContactForm          from '../components/contact-form';
 
 class HomePage extends Component {
   render() {
@@ -14,7 +13,6 @@ class HomePage extends Component {
         <Services />
         <Price />
         <Features />
-        <ContactForm />
       </div>
     );
   }

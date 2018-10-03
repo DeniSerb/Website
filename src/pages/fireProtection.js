@@ -45,7 +45,7 @@ const FireProtection = () => (
             промышленном строительстве.
           </p>
         </Col>
-        <Col md="6">
+        <Col md="6" className="last">
           <img src="images/42.jpg" width="100%" alt="green"/>
         </Col>
       </Row>

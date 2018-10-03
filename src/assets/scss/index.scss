@@ -252,25 +252,50 @@ h4, p, a{
   }
 }
 
-.form-wrapper{
-  background-color: $darkBlue;
+.footer-wrapper{
+  background-color: #1C2331;
   padding-top: 5%;
   color: #ffff;
 
+  hr{
+      background: white;
+      width: 60px;
+  }
+
   input, textarea,  input:focus, textarea:focus{
     border: 2px #ffff solid;
-    background-color: $darkBlue;
+    background-color: #1C2331;
     border-radius: 0;
   }
+
+  .pb-3 {
+    padding-bottom: 0 !important;
+  }
+
+  .info{
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+    @media (max-width: 767px) {
+
+      .form {
+        padding-top: 5%;
+      }
+
+      .numbers {
+        text-align: center;
+        padding-top: 5%;
+      }
+  }
+
+}
+
+.form-control {
+  color: white !important;
 }
 
 .form-light .font-small {
   font-size: 0.8rem;
-}
-
-.form-light .footer {
-  border-bottom-left-radius: .3rem;
-  border-bottom-right-radius: .3rem;
 }
 
 .green-btn{
@@ -306,6 +331,9 @@ th {
 }
 
 .energy-wrapper {
+  .table-responsive {
+    margin-bottom: 5%;
+  }
   .left {
     text-align: left;
   }
@@ -323,6 +351,9 @@ th {
 }
 
 .noise-wrapper {
+  .table-responsive {
+    margin-bottom: 5%;
+  }
   td {
     text-align: center;
   }
@@ -345,4 +376,8 @@ th {
       padding-top: 3%;
     }
   }
+}
+
+.last{
+  margin-bottom: 5%;
 }

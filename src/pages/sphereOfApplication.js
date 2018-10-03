@@ -67,7 +67,7 @@ const SphereOfApplication = () => (
             временем под собственным весом.
           </p>
         </Col>
-        <Col md="6">
+        <Col md="6" className="last">
            <img src="images/66.jpg" width="100%" alt="wall" />
         </Col>
       </Row>

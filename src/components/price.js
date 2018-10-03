@@ -11,7 +11,7 @@ const Price = () => (
         <Table striped small bordered>
         <TableHead>
           <tr>
-            <th colspan="2">Основные работы:</th>
+            <th colSpan="2">Основные работы:</th>
           </tr>
         </TableHead>
         <TableBody>
@@ -44,7 +44,7 @@ const Price = () => (
             <td>150 грн.</td>
           </tr>
           <tr>
-            <td colspan="2" className="table-subheading">Дополнительно:</td>
+            <td colSpan="2" className="table-subheading">Дополнительно:</td>
           </tr>
           <tr>
             <td>Сверление отверстий </td>
@@ -55,7 +55,7 @@ const Price = () => (
             <td>199 грн.</td>
           </tr>
           <tr>
-            <td colspan="2" className="table-subheading">Компоненты для производителей пеноизола:</td>
+            <td colSpan="2" className="table-subheading">Компоненты для производителей пеноизола:</td>
           </tr>
           <tr>
             <td>Смола  КФ-ТИ (1л)</td>

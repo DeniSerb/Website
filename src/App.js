@@ -14,6 +14,7 @@ import NoiseCanseling       from './pages/noiseCanseling';
 import FireProtection       from './pages/fireProtection';
 import SphereOfApplication  from './pages/sphereOfApplication';
 import                           './assets/css/index.min.css';
+import Footer               from './components/footer';
 
 class App extends Component {
 
@@ -36,6 +37,10 @@ class App extends Component {
   render() {
     return (
       <div>
+        <ScrollUpButton
+          style={{width: 40}}
+          AnimationDuration={1500}
+        />
         <Router>
           <div className="App">
             <Header />
@@ -49,10 +54,7 @@ class App extends Component {
               </Switch>
           </div>
         </Router>
-        <ScrollUpButton
-          style={{width: 40}}
-          AnimationDuration={1500}
-        />
+        <Footer/>
       </div>
     );
   }
