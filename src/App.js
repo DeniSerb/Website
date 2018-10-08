@@ -15,6 +15,7 @@ import FireProtection       from './pages/fireProtection';
 import SphereOfApplication  from './pages/sphereOfApplication';
 import                           './assets/css/index.min.css';
 import Footer               from './components/footer';
+import ScrollToTop          from './scrollToTop'
 
 class App extends Component {
 
@@ -45,12 +46,14 @@ class App extends Component {
           <div className="App">
             <Header />
               <Switch>
-                <Route exact path='/'                component={HomePage}/>
-                <Route path='/EnergyEfficiency'      component={EnergyEfficiency}/>
-                <Route path='/NoiseCanseling'        component={NoiseCanseling}/>
-                <Route path='/FireProtection'        component={FireProtection}/>
-                <Route path='/SphereOfApplication'   component={SphereOfApplication}/>
-                <Route                               component={NotFound}/>
+                <ScrollToTop>
+                  <Route exact path='/'                component={HomePage}/>
+                  <Route path='/EnergyEfficiency'      component={EnergyEfficiency}/>
+                  <Route path='/NoiseCanseling'        component={NoiseCanseling}/>
+                  <Route path='/FireProtection'        component={FireProtection}/>
+                  <Route path='/SphereOfApplication'   component={SphereOfApplication}/>
+                </ScrollToTop>
+                  <Route                               component={NotFound}/>
               </Switch>
           </div>
         </Router>
