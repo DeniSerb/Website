@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes            from 'prop-types'
+import PropTypes            from 'prop-types';
 import {
   Navbar,
   NavbarNav,
@@ -97,10 +97,10 @@ class Header extends Component {
                 <NavLink to="/SphereOfApplication">Сфера применения</NavLink>
               </NavItem>
               <NavItem>
-                <a href={`${window.location.origin}/#contact-form`}>Контакты</a>
+                <a href={`${window.location.origin}/#contact-form`} className="nav-link Ripple-parent">Контакты</a>
               </NavItem>
               <NavItem>
-                <a href={`${window.location.origin}/#price`}>Цена</a>
+                <a href={`${window.location.origin}/#price`} className="nav-link Ripple-parent">Цена</a>
               </NavItem>
             </NavbarNav>
           </Collapse>
