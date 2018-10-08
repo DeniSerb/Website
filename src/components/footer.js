@@ -5,8 +5,53 @@ import {
   Col,
   Input
 }            from 'mdbreact';
+import axios from 'axios';
 
 class Footer extends React.Component  {
+  constructor(props) {
+    super(props);
+    this.state = {
+      form : {
+        name    : '',
+        email   : '',
+        massage : '',
+      }
+    };
+  }
+
+  handleSubmit(e) {
+    const { name, email, message } = this.state.form;
+
+    e.preventDefault();
+
+    axios({
+        method: "POST",
+        url:"http://localhost:5000/send",
+        data: {
+            name: name,
+            email: email,
+            message: message
+        }
+    }).then((response)=>{
+        if (response.data.msg === 'success'){
+            alert("Message Sent.");
+            this.resetForm()
+        }else if(response.data.msg === 'fail'){
+            alert("Message failed to send.")
+        }
+    })
+  }
+
+  handleChange(field, e) {
+    let updatedForm = Object.assign({}, this.state.form);
+    updatedForm[field] = e.target.value;
+    this.setState({ form: updatedForm });
+  }
+
+  resetForm() {
+    document.getElementById('contact-form').reset();
+  }
+
   render() {
     return(
       <div className="footer-wrapper">
@@ -23,37 +68,45 @@ class Footer extends React.Component  {
               <div className="text-center">
                 <h3 className="pink-text mb-5"><strong>Cвяжитесь с нами</strong></h3>
               </div>
+            <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <Input
                 label="Введите ваше имя"
+                name="name"
+                onChange={this.handleChange.bind(this, 'name')}
                 group
                 type="text"
-                validate
+                required
               />
               <Input
                 label="Введите ваш email"
+                name="email"
+                type="email"
+                onChange={this.handleChange.bind(this, 'email')}
                 group
-                type="text"
-                validate
+                required
               />
               <Input
                 type="textarea"
                 label="Сообщение"
+                name="message"
+                onChange={this.handleChange.bind(this, 'message')}
                 group
-                validate
+                required
               />
               <div className="md-form pb-3">
               </div>
               <Row className="d-flex align-items-center mb-4">
                 <Col md="12" className="text-center">
-                  <button type="button" className="btn green-btn">
+                  <button type="submit" className="btn green-btn">
                     Отправить
                   </button>
                 </Col>
               </Row>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+            </form>
+          </Col>
+        </Row>
+      </Container>
+    </div>
     );
   }
 };
