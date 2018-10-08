@@ -8,11 +8,21 @@ import {
 import axios from 'axios';
 
 class Footer extends React.Component  {
-  handleSubmit(e){
+  constructor(props) {
+    super(props);
+    this.state = {
+      form : {
+        name    : '',
+        email   : '',
+        massage : '',
+      }
+    };
+  }
+
+  handleSubmit(e) {
+    const { name, email, message } = this.state.form;
+
     e.preventDefault();
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
 
     axios({
         method: "POST",
@@ -32,7 +42,13 @@ class Footer extends React.Component  {
     })
   }
 
-  resetForm(){
+  handleChange(field, e) {
+    let updatedForm = Object.assign({}, this.state.form);
+    updatedForm[field] = e.target.value;
+    this.setState({ form: updatedForm });
+  }
+
+  resetForm() {
     document.getElementById('contact-form').reset();
   }
 
@@ -57,6 +73,7 @@ class Footer extends React.Component  {
                 label="Введите ваше имя"
                 name="name"
                 id="name"
+                onChange={this.handleChange.bind(this, 'name')}
                 group
                 type="text"
                 validate
@@ -65,6 +82,7 @@ class Footer extends React.Component  {
                 label="Введите ваш email"
                 name="email"
                 id="email"
+                onChange={this.handleChange.bind(this, 'email')}
                 group
                 type="text"
                 validate
@@ -74,6 +92,7 @@ class Footer extends React.Component  {
                 label="Сообщение"
                 name="message"
                 id="message"
+                onChange={this.handleChange.bind(this, 'message')}
                 group
                 validate
               />
