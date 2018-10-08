@@ -41,6 +41,7 @@ h4, p, a{
     color: #ffff  !important;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700 !important;
+
     &:hover {
         color: $green !important;
         @include transition(.4s ease-in-out);

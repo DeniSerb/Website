@@ -97,10 +97,10 @@ class Header extends Component {
                 <NavLink to="/SphereOfApplication">Сфера применения</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Contacts">Контакты</NavLink>
+                <a href={`${window.location.origin}/#contact-form`}>Контакты</a>
               </NavItem>
               <NavItem>
-                <NavLink to="Price">Цена</NavLink>
+                <a href={`${window.location.origin}/#price`}>Цена</a>
               </NavItem>
             </NavbarNav>
           </Collapse>

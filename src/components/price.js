@@ -3,7 +3,7 @@ import { Container, Table, TableBody, TableHead  } from 'mdbreact';
 
 
 const Price = () => (
-  <div className="price-wrapper">
+  <div className="price-wrapper" id="price">
     <Container>
       <h2 className="h1-responsive font-weight-bold my-5 text-center">
         Выбрав утеплитель пеноизол именно у нас – вы сможете быстро, дешево и эффективно утеплить свой дом.

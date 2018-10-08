@@ -54,7 +54,7 @@ class Footer extends React.Component  {
 
   render() {
     return(
-      <div className="footer-wrapper">
+      <div className="footer-wrapper" id="contact-form">
         <Container>
           <Row>
             <Col md="6" className="numbers">
