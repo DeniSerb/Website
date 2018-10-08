@@ -76,16 +76,16 @@ class Footer extends React.Component  {
                 onChange={this.handleChange.bind(this, 'name')}
                 group
                 type="text"
-                validate
+                required
               />
               <Input
                 label="Введите ваш email"
                 name="email"
                 id="email"
+                type="email"
                 onChange={this.handleChange.bind(this, 'email')}
                 group
-                type="text"
-                validate
+                required
               />
               <Input
                 type="textarea"
@@ -94,7 +94,7 @@ class Footer extends React.Component  {
                 id="message"
                 onChange={this.handleChange.bind(this, 'message')}
                 group
-                validate
+                required
               />
               <div className="md-form pb-3">
               </div>
