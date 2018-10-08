@@ -72,7 +72,6 @@ class Footer extends React.Component  {
               <Input
                 label="Введите ваше имя"
                 name="name"
-                id="name"
                 onChange={this.handleChange.bind(this, 'name')}
                 group
                 type="text"
@@ -81,7 +80,6 @@ class Footer extends React.Component  {
               <Input
                 label="Введите ваш email"
                 name="email"
-                id="email"
                 type="email"
                 onChange={this.handleChange.bind(this, 'email')}
                 group
@@ -91,7 +89,6 @@ class Footer extends React.Component  {
                 type="textarea"
                 label="Сообщение"
                 name="message"
-                id="message"
                 onChange={this.handleChange.bind(this, 'message')}
                 group
                 required
