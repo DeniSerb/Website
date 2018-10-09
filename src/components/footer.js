@@ -34,9 +34,9 @@ class Footer extends React.Component  {
         }
     }).then((response)=>{
         if (response.data.msg === 'success'){
-            alert("Message Sent.");
+            alert("Сообщение отправлено.");
         }else if(response.data.msg === 'fail'){
-            alert("Message failed to send.")
+            alert("Не удалось отправить сообщение.")
         }
     })
   }
