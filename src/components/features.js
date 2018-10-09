@@ -36,8 +36,10 @@ class Features extends Component {
               </Link>
             </Col>
             <Col xs="12" md="3" className="text-center feature-item">
+            <a href={`${window.location.origin}/#price`}>
               <Fa icon="dollar fa-4x" />
               <h3>Выгодная цена</h3>
+            </a>
             </Col>
             </Row>
           </div>
