@@ -53,11 +53,11 @@ class Footer extends React.Component  {
         <Container>
           <Row>
             <Col md="6" className="numbers">
-               <h3 className="text-uppercase font-weight-bold"><strong>Оформить заказ</strong></h3>
-               <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-               <h4><i className="fa fa-envelope mr-3 info"></i> example@mail.com</h4>
-               <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
-               <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
+              <h3 className="text-uppercase font-weight-bold"><strong>Оформить заказ</strong></h3>
+              <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
+              <h4><i className="fa fa-envelope mr-3 info"></i> example@mail.com</h4>
+              <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
+              <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
              </Col>
             <Col md="6"className="form">
               <div className="text-center">
