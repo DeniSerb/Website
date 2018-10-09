@@ -26,7 +26,7 @@ class Footer extends React.Component  {
 
     axios({
         method: "POST",
-        url:"http://localhost:5000/send",
+        url:"https://penoizol-backend.herokuapp.com/send",
         data: {
             name: name,
             email: email,
@@ -35,7 +35,6 @@ class Footer extends React.Component  {
     }).then((response)=>{
         if (response.data.msg === 'success'){
             alert("Message Sent.");
-            this.resetForm()
         }else if(response.data.msg === 'fail'){
             alert("Message failed to send.")
         }
@@ -46,10 +45,6 @@ class Footer extends React.Component  {
     let updatedForm = Object.assign({}, this.state.form);
     updatedForm[field] = e.target.value;
     this.setState({ form: updatedForm });
-  }
-
-  resetForm() {
-    document.getElementById('contact-form').reset();
   }
 
   render() {
