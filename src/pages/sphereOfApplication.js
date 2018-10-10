@@ -17,7 +17,7 @@ const SphereOfApplication = () => (
       <h4 className="h1-responsive font-weight-bold my-5 text-center two">Никаких грызунов!</h4>
       <Row className="sphere-content-wrapper">
         <Col md="6">
-          <img src="images/5.jpg" width="100%" alt="wall" />
+          <img src="images/1.jpeg" width="100%" alt="wall" />
         </Col>
         <Col md="6">
           <p>
