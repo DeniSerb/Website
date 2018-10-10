@@ -8,7 +8,7 @@ import {
 const SphereOfApplication = () => (
   <div className="sphere-wrapper">
     <Container>
-      <h1 className="h1-responsive font-weight-bold my-5 text-center one">Сфера мрименения</h1>
+      <h1 className="h1-responsive font-weight-bold my-5 text-center one">Приемущества пеноизола</h1>
       <h6 className="h1-responsive font-weight-bold my-5 text-center">
         Пеноизол более энергоэффективный утеплитель, чем традиционные теплоизоляционные материалы. 
         Под  давлением, заливной утеплитель, проникает во все полости, пустоты и трещины, создавая 
@@ -41,7 +41,7 @@ const SphereOfApplication = () => (
           <img src="images/33.jpg" width="100%" alt="wall" />
         </Col>
        </Row>
-       <h4 className="h1-responsive font-weight-bold my-5 text-center two">Герметичная изоляция!</h4>
+       <h4 className="h1-responsive font-weight-bold my-5 text-center two">Заполняет все полости!</h4>
        <Row className="sphere-content-wrapper">
         <Col md="6">
            <img src="images/5.jpg" width="100%" alt="wall" />

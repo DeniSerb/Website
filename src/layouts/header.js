@@ -94,7 +94,7 @@ class Header extends Component {
                 </Dropdown>
               </NavItem>
               <NavItem>
-                <NavLink to="/SphereOfApplication">Сфера применения</NavLink>
+                <NavLink to="/SphereOfApplication">Приемущества пеноизола</NavLink>
               </NavItem>
               <NavItem>
                 <a href={`${window.location.origin}/#contact-form`} className="nav-link Ripple-parent">Контакты</a>
