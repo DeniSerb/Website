@@ -21,7 +21,7 @@ class HomeHeader extends Component {
             </p>
             <Row>
               <Col md="6">
-                <Link to="/EnergyEfficiency">
+                <Link to="/WallInsulation">
                   <div className="services-item">
                     <img src="images/wall.jpg" width="100%" alt="wall" />
                     <h2>Утепление стен</h2>
@@ -38,7 +38,7 @@ class HomeHeader extends Component {
                 </Link>
               </Col>
               <Col md="6">
-                <Link to="/EnergyEfficiency">
+                <Link to="/RoofInsulation">
                   <div className="services-item">
                     <img src="images/roof.jpg" width="100%" alt="roof" />
                     <h2>Утепление крыши</h2>
@@ -54,7 +54,7 @@ class HomeHeader extends Component {
                 </Link>
               </Col>
               <Col md="6">
-                <Link to="/EnergyEfficiency">
+                <Link to="/FloorInsulation">
                   <div className="services-item">
                     <img src="images/floor.jpg" width="100%" alt="floor" />
                     <h2>Утепление полов</h2>
@@ -70,7 +70,7 @@ class HomeHeader extends Component {
                 </Link>
               </Col>
               <Col md="6">
-                <Link to="/EnergyEfficiency">
+                <Link to="/WarehouseInsulation">
                   <div className="services-item">
                     <img src="images/garage.jpg" width="100%" alt="garage" />
                     <h2>Утепление ангаров</h2>

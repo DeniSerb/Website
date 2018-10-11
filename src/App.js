@@ -13,9 +13,13 @@ import EnergyEfficiency     from './pages/energyEfficiency';
 import NoiseCanseling       from './pages/noiseCanseling';
 import FireProtection       from './pages/fireProtection';
 import SphereOfApplication  from './pages/sphereOfApplication';
-import                           './assets/css/index.min.css';
+import FloorInsulation      from './pages/floorInsulation';
+import WallInsulation       from './pages/wallInsulation';
+import RoofInsulation       from './pages/roofInsulation';
+import WarehouseInsulation  from './pages/warehouseInsulation';
 import Footer               from './components/footer';
 import ScrollToTop          from './scrollToTop'
+import                           './assets/css/index.min.css';
 
 class App extends Component {
 
@@ -52,6 +56,10 @@ class App extends Component {
                   <Route path='/NoiseCanseling'        component={NoiseCanseling}/>
                   <Route path='/FireProtection'        component={FireProtection}/>
                   <Route path='/SphereOfApplication'   component={SphereOfApplication}/>
+                  <Route path='/FloorInsulation'       component={FloorInsulation}/>
+                  <Route path='/WallInsulation'        component={WallInsulation}/>
+                  <Route path='/RoofInsulation'        component={RoofInsulation}/>
+                  <Route path='/WarehouseInsulation'   component={WarehouseInsulation}/>
                 </ScrollToTop>
                   <Route                               component={NotFound}/>
               </Switch>
