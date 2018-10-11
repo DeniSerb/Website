@@ -61,7 +61,7 @@ class App extends Component {
                   <Route path='/RoofInsulation'        component={RoofInsulation}/>
                   <Route path='/WarehouseInsulation'   component={WarehouseInsulation}/>
                 </ScrollToTop>
-                  <Route                               component={NotFound}/>
+                <Route exact                           component={NotFound}/>
               </Switch>
           </div>
         </Router>
