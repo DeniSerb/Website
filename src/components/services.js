@@ -26,8 +26,10 @@ class HomeHeader extends Component {
                     <img src="images/wall.jpg" width="100%" alt="wall" />
                     <h2>Утепление стен</h2>
                     <p className="grey-text mb-md-0 mb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                     Утепление внутренней полости стен возможно в тех случаях, когда в
+                     стене имеются пустоты, так называемые межстенные полости.
+                     Технологически это возможно как при возведении стен, так и
+                     после окончательной постройки.
                     </p>
                     <span className="read-more">
                       Подробнее
@@ -41,8 +43,9 @@ class HomeHeader extends Component {
                     <img src="images/roof.jpg" width="100%" alt="roof" />
                     <h2>Утепление крыши</h2>
                     <p className="grey-text mb-md-0 mb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                      Надежная, теплая кровля – одно из главных условий для комфортного проживания
+                      в доме. Утепление кровли позволит сэкономить немало средств за счет меньшего
+                      расхода тепловой энергии.
                     </p>
                     <span className="read-more">
                       Подробнее
@@ -56,8 +59,9 @@ class HomeHeader extends Component {
                     <img src="images/floor.jpg" width="100%" alt="floor" />
                     <h2>Утепление полов</h2>
                     <p className="grey-text mb-md-0 mb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                      Утепление пола пеноизолом – это особая технология, предусматривающая
+                      использование жидкого теплоизоляционного материала, который закачивается
+                      в подготовленные полости ограждающей конструкции.
                     </p>
                     <span className="read-more">
                       Подробнее
@@ -71,8 +75,9 @@ class HomeHeader extends Component {
                     <img src="images/garage.jpg" width="100%" alt="garage" />
                     <h2>Утепление ангаров</h2>
                     <p className="grey-text mb-md-0 mb-5">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Reprehenderit maiores aperiam minima assumenda deleniti hic.
+                      Утепление ангара, склада пеноизолом происходит непосредственно на объекте
+                      методом заливки, что исключает наличие крепёжных элементов, значительно
+                      ускоряет процесс монтажа.
                     </p>
                     <span className="read-more">
                       Подробнее
