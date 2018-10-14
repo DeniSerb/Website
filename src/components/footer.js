@@ -61,7 +61,7 @@ class Footer extends React.Component  {
              </Col>
             <Col md="6"className="form">
               <div className="text-center">
-                <h3 className="pink-text mb-5"><strong>Cвяжитесь с нами</strong></h3>
+                <h3 className="pink-text mb-5 white"><strong>Cвяжитесь с нами</strong></h3>
               </div>
             <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
               <Input
