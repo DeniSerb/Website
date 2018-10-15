@@ -55,9 +55,9 @@ class Footer extends React.Component  {
             <Col md="6" className="numbers">
               <h3 className="text-uppercase font-weight-bold"><strong>Оформить заказ</strong></h3>
               <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" />
-              <h4><i className="fa fa-envelope mr-3 info"></i> example@mail.com</h4>
-              <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
-              <h4><i className="fa fa-phone mr-3 info"></i> + 380 123 456 78 90</h4>
+              <h4><i className="fa fa-envelope mr-3 info"></i> penoizoll.ua@gmail.com</h4>
+              <h4><i className="fa fa-phone mr-3 info"></i> + 380 ‎(95) 124 74 25</h4>
+              <h4><i className="fa fa-phone mr-3 info"></i> + 380 ‎(98) 859 43 45</h4>
              </Col>
             <Col md="6"className="form">
               <div className="text-center">
